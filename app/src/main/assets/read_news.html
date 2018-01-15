@@ -1,0 +1,60 @@
+<head>
+
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+    <script type="text/javascript" >
+
+function voiceStartCallback() {
+
+}
+
+function voiceEndCallback() {
+
+   window.js.flag();
+   }
+
+   function voiceEndCallback2() {
+
+      window.js.RSf();
+      window.js.flag();
+
+   }
+
+var parameters = {
+    onstart: voiceStartCallback,
+    onend: voiceEndCallback
+}
+
+var parameters2 = {
+    onstart: voiceStartCallback,
+    onend: voiceEndCallback2
+}
+
+
+    function speak(msg) {
+
+
+    responsiveVoice.speak(msg,"Arabic Female", parameters);
+
+ document.getElementById("p1").innerHTML = "Headline";
+
+    }
+
+    function speak2(msg) {
+
+
+    responsiveVoice.speak(msg,"Arabic Female", parameters2);
+
+ document.getElementById("p1").innerHTML = "Story";
+
+    }
+
+
+</script>
+
+</head >
+
+
+<body>
+</body>
